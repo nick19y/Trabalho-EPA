@@ -1,0 +1,105 @@
+header {
+    width: 99.2vw;
+    height: 90px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.botoes {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    margin-left: 79.5%;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 120px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+#pesquisar1 {
+    width: 20vw;
+    height: 45px;
+    border-radius: 4px;
+}
+
+.pesquisar-form {
+    animation: pesquisar 7s infinite;
+}
+
+@keyframes pesquisar {
+    0% {
+        margin-left: 1%;
+    }
+
+    50%{
+        margin-left: 40%;
+    }
+
+    100%{
+        margin-left: 1%;
+    }
+}
+
+.button{
+    width: 40px;
+    height: 36px;
+    margin-left: -45px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+}
+
+.duvidas {
+    width: 80px;
+    height: 90px;
+    font-size: 14px;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+.referencias {
+    width: 80px;
+    height: 90px;
+    font-size: 14px;
+    margin-left: 5px;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+.entrar {
+    width: 120px;
+    height: 90px;
+    font-size: 14px;
+    margin-left: 5px;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+.favoritos {
+    width: 60px;
+    height: 90px;
+    font-size: 50px;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
+.carrinho {
+    width: 80px;
+    height: 90px;
+    font-size: 30px;
+    background-color: blue;
+    border: none;
+    color: white;
+}
+
