@@ -1,0 +1,32 @@
+.carousel-inner {
+    width: 600px;
+    margin: auto;
+}
+
+.carousel-control-prev {
+    background: transparent;
+    height: 8vh;
+    width: 3vw;
+    margin-top: 27%;
+}
+
+.carousel-control-next {
+    background: transparent;
+    height: 8vh;
+    width: 3vw;
+    margin-top: 27%;
+}
+
+h5 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.main-1 {
+    width: 99.2vw;
+    height: 100vh;
+    
+}
