@@ -1,0 +1,76 @@
+* {
+    border: solid 1px black;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+    
+}
+.meios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 600px;
+    
+}
+
+
+
+
+
+ .pag { 
+ display: flex; 
+ width: 500px; 
+ height: 100px;
+ margin-bottom: 300px;
+  
+  
+ } 
+  
+  
+ .rede { 
+ display: flex; 
+ width: 250px; 
+ height: 100px; 
+ margin-bottom: 300px;
+
+  
+
+ } 
+
+.central{
+align-items: center;
+justify-content: center;
+text-align: center;
+
+
+}
+
+.desen {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.conosco {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+  
+  
