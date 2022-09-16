@@ -47,6 +47,11 @@ h1{
     justify-content: center;
     align-items: center;
 }
+.right-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .search-btn:hover{
     cursor: pointer;
 }
@@ -59,12 +64,9 @@ input::placeholder{
 }
 
 .botoes {
-    width: 20%;
-    height: 10%;
-    position: absolute;
-    margin-left: 79.5%;
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
 }
 
 #logo {
@@ -106,50 +108,21 @@ input::placeholder{
     font-size: 20px;
 }
 
-.duvidas {
-    width: 80px;
-    height: 90px;
-    font-size: 14px;
-    background-color: blue;
-    border: none;
-    color: white;
-}
-
-.referencias {
-    width: 80px;
-    height: 90px;
-    font-size: 14px;
-    margin-left: 5px;
-    background-color: blue;
-    border: none;
-    color: white;
-}
-
-.entrar {
-    width: 120px;
-    height: 90px;
-    font-size: 14px;
-    margin-left: 5px;
-    background-color: blue;
-    border: none;
-    color: white;
-}
-
 .favoritos {
     width: 60px;
     height: 90px;
     font-size: 50px;
-    background-color: blue;
+    background-color: white;
     border: none;
-    color: white;
+    color: black;
 }
 
 .carrinho {
     width: 80px;
     height: 90px;
     font-size: 30px;
-    background-color: blue;
+    background-color: white;
     border: none;
-    color: white;
+    color: black;
 }
 

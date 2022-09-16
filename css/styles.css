@@ -1,10 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-  
 a{
-    color: rgb(0, 13, 255);
+    color: rgb(0, 119, 255);
     text-decoration: none;
     font-size: large;
 }
@@ -15,12 +15,27 @@ nav{
     outline: 1px solid gray;
     height: 12vh;
 }
+.logo{
+    display: flex;
+    height: 50px;
+    width: 50px;
+}
+.logo img{
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.logo img:hover{
+    cursor: pointer;
+}
 h1{
     font-family: 'Alfa Slab One', cursive;
-    color: rgb(0, 13, 255);
+    font-size: 35px;
+    color: rgb(0, 119, 255);
+    cursor: pointer;
+    margin-top: 3px;
 }
 .search_bar{
-    background:  rgb(0, 13, 255);
+    background:  rgb(0, 119, 255);
     height: 40px;
     padding: 10px;
     border-radius: 40px;
@@ -56,4 +71,17 @@ input::placeholder{
 /* quando passar o mouse por cima do search bar, o search_text tem que ter outro estilo */
 .search_bar:hover > .search_text{
     width: 240px;
+}
+.sign-up{
+    height: 60px;
+    width: 60px;
+}
+.sign-up:hover{
+    cursor: pointer;
+}
+.cadastro{
+    font-size: 15px;
+}
+.cadastro:hover{
+    cursor: pointer;
 }
