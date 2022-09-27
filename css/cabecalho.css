@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+a {
+    color: rgb(0, 13, 255);
+    text-decoration: none;
+    font-size: large;
+}
+
+.animate__animated {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 0.5px;
+}
+
+.logo img {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    outline: 1px solid gray;
+    height: 10vh;
+}
+
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 32px;
+    color: rgb(0, 119, 255);
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.search_bar {
+    background:  rgb(0, 119, 255);
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: rodar 1s;
+}
+
+.search_text {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .2s;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+}
+
+/* quando passar o mouse por cima do search bar, o search_text tem que ter outro estilo */
+input::placeholder {
+    color: white;
+}
+
+.search_bar:hover > .search_text {
+    width: 240px;
+}
+
+.sign-up {
+    height: 60px;
+    width: 55px;
+}
+
+.sign-up:hover {
+    cursor: pointer;
+}
+
+.cadastro {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: -2px;
+}
+
+.cadastro:hover {
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#logo {
+    width: 120px;
+    height: 70px;
+    margin-left: 20px;
+}
+
+.button {
+    width: 40px;
+    height: 36px;
+    margin-left: -45px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+}
+
+.favoritos {
+    width: 60px;
+    height: 10vh;
+    font-size: 50px;
+    background-color: white;
+    border: none;
+    color: black;
+    margin-left: 15px;
+    animation: rodar 1.5s;
+    border-radius: 20px;
+    margin-bottom: 0.5px;
+}
+
+@keyframes rodar {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.carrinho {
+    width: 80px;
+    height: 10vh;
+    font-size: 30px;
+    background-color: white;
+    border: none;
+    color: black;
+    animation: rodar 2s;
+    border-radius: 40px;
+}
+
+#botoes-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.preto {
+    width: 35px;
+    height: 20px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.cinza {
+    width: 35px;
+    height: 20px;
+    font-size: 10px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
