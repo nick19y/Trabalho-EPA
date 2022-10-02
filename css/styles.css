@@ -65,7 +65,7 @@ h1{
 .search-btn:hover{
     cursor: pointer;
 }
-input::placeholder{
+.search_text::placeholder{
     color: white;
 }
 /* quando passar o mouse por cima do search bar, o search_text tem que ter outro estilo */

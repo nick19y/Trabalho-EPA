@@ -1,0 +1,63 @@
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+h2{
+    color: rgb(0, 119, 255);
+}
+form{
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 60px;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+}
+.input, .nome_completo{
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.input_radio{
+    margin: 0px 4px 0px 12px;
+}
+label{
+    padding: 8px 0px;
+    margin: 8px 0px 0px;
+}
+.cadastro_form1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo_cadastro{
+    height: 51rem;
+    margin: 60px 40px 0px 40px;
+}
+.senha{
+    margin-bottom: 30px;
+    width: 80%;
+}
+.cpf_lbl{
+    margin-bottom: -20px;
+}
+#id_cpf{
+    width: 60%;
+}
+.input_column{
+    display: flex;
+    flex-direction: column;
+}
+.button_form1:hover{
+    cursor: pointer;
+}
+.telefone{
+    width: 65%;
+}
+.button_form1{
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    background-color: rgb(0, 119, 255);;
+}

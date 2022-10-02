@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- consertar hover no css acima -->
+    <link rel="stylesheet" href="assets.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto EPA</title>
+    <script src="script/script.js" defer></script>
+    <script src="js/form.js" defer></script>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- font awesome -->
+            <div class="logo">
+                <img src="img/livros_logo.png">
+                <h1>MyBooks</h1>
+            </div>
+            <div class="right-menu">
+                <div class="search_bar">
+                    <input type="text" class="search_text" placeholder="Pesquisar"> 
+                    <a class="search-btn">
+                        <img src="loupe.png" height="20px" width="20px" style="padding: 0;">
+                    </a>
+                </div>
+                <div class="botoes">
+                    <button type="submit" class="favoritos">♡</button>
+                    <button type="submit" class="carrinho">🛒</button>
+                </div>
+                <img src="img/sign_up.svg" class="sign-up">
+                <h4 class="cadastro">Entre ou <br> Cadastre-se</h4>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="formulario">
+            <form action="cadastro.php" method="post">
+                <div class="cadastro_form1">
+                    <div class="conteudo_cadastro">
+                    <h2>Cadastre-se</h2>
+                    <fieldset>
+                        <div class="input_column">
+                            <label for="nome_completo">Nome completo</label>
+                            <input class="nome_completo" type="text" name="nome" required placeholder="">
+                        </div>
+                    </fieldset>
+                    <div class="genero_selecao">
+                        <label for="genero">Gênero</label>
+                        <br>
+                        <label>
+                            <input class="input_radio" type="radio" name="genero" value="masculino">Masculino
+                        </label>
+                        <label>
+                            <input class="input_radio" type="radio" name="genero" value="feminino">Feminino
+                        </label>
+                        <label >
+                            <input class="input_radio" type="radio" name="genero" value="outro">Outro
+                        </label>
+                    </div>
+                    <div class="data_nascimento">
+                        <div class="input_column">
+                            <label class="cpf_lbl" for="cpf_lbl">Data de nascimento</label>
+                            <label>
+                                <input class="input" class="input_cpf" type="date" name="data_nascimento" required>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="cpf">
+                        <div class="input_column">
+                            <label class="cpf_lbl" for="cpf_lbl">CPF</label>
+                            <label>
+                                <input class="input"  type="text" name="cpf" placeholder="___.___.___-__" maxlength="14" id="id_cpf" onkeyup="mascara_cpf()" required>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="telefone">
+                        <div class="input_column">
+                            <label for="telefone_lbl">Telefone</label>
+                            <input class="input" type="tel" name="telefone" id="id_tel" onkeyup="mascara_tel()" placeholder="(__) _____-____" maxlength="15" required>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div class="input_column">
+                            <label for="email_lbl">Email</label>
+                            <input class="input" type="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="senha">
+                        <div class="input_column">
+                            <label for="senha_lbl">Senha</label>
+                            <input class="input" type="password" required>
+                        </div>
+                    </div>
+                    <button class="button_form1">Criar cadastro</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </main>
+        <footer>
+            <div class="meios">
+            <div class="pag">
+        <p>Meios de Pagamento</p>
+        <br>
+        <img src="img/BandeirasCartoesBancos.png" >
+        </div>
+        <div class="rede">
+        <p>Redes Sociais</p>
+        <br>
+            <img src="img/links.PNG" >
+            </div>
+        </div>
+            <div class="central">
+                <p>Central de atendimento</p>
+            </div>
+            <div class="desen">
+                <p>desenvolvedores</p>
+            </div>
+            <div class="conosco">
+                <p>estudo conosco</p>
+            </div>
+        </footer>
+    </body>
+</html>
