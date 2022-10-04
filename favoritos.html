@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- terminar a classificação -->
 <html lang="pt-br">
 <head>
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="assets.css">
+    <link rel="stylesheet" href="css/favoritos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
@@ -16,6 +18,7 @@
     <title>Projeto EPA</title>
     <script src="script/script.js" defer></script>
     <script src="js/index.js" defer></script>
+    <script src="js/favoritos.js" defer></script>
 </head>
 <body>
     <header>
@@ -34,14 +37,170 @@
                 </div>
                 <div class="botoes">
                     <button type="submit" class="favoritos">♡</button>
-                    <button type="submit" class="carrinho">🛒</button>
+                    <img class="carrinho" src="img/shopping-cart.webp" alt="">
+                    <img src="img/sign_up.svg" class="sign-up">
                 </div>
-                <img src="img/sign_up.svg" class="sign-up">
                 <h4 class="cadastro">Entre ou <br> Cadastre-se</h4>
             </div>
         </nav>
     </header>
     <main>
+        <!-- font awesome -->
+        <div class="favoritos1">
+            <h1 style="border-bottom: 1px solid black;">Favoritos</h1>
+        </div>
+        <div class="lista">
+            <div class="item">
+                <div class="livro">
+                    <div class="remover">
+                        <a href="javascript:removerProduto()">
+                        <img src="img/circle-xmark-regular.svg" class="img_remover" alt="remover livro">
+                    </a>
+                    </div>
+                    <img src="" class="img_livro" alt="livro adicionado">
+                    <span class="name">nome do livro</span>
+                    <div class="adicionar_carrinho">
+                        <span class="preco_livro">R$50.00</span>
+                        <img class="shopping_cart_favorites" src="img/shopping-cart.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="livro">
+                    <div class="remover">
+                        <a href="javascript:removerProduto()">
+                            <img src="img/circle-xmark-regular.svg" class="img_remover" alt="remover livro">
+                        </a>
+                    </div>
+                    <img src="" class="img_livro" alt="livro adicionado">
+                    <span class="name">nome do livro</span>
+                    <div class="adicionar_carrinho">
+                        <span class="preco_livro">R$50.00</span>
+                        <img class="shopping_cart_favorites" src="img/shopping-cart.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="livro">
+                    <div class="remover">
+                        <a href="javascript:removerProduto()">
+                            <img src="img/circle-xmark-regular.svg" class="img_remover" alt="remover livro">
+                        </a>
+                    </div>
+                    <img src="" class="img_livro" alt="livro adicionado">
+                    <span class="name">nome do livro</span>
+                    <div class="adicionar_carrinho">
+                        <span class="preco_livro">R$50.00</span>
+                        <img class="shopping_cart_favorites" src="img/shopping-cart.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="livro">
+                    <div class="remover">
+                        <a href="javascript:removerProduto()">
+                            <img src="img/circle-xmark-regular.svg" class="img_remover" alt="remover livro">
+                        </a>
+                    </div>
+                    <img src="" class="img_livro" alt="livro adicionado">
+                    <span class="name">nome do livro</span>
+                    <div class="adicionar_carrinho">
+                        <span class="preco_livro">R$50.00</span>
+                        <img class="shopping_cart_favorites" src="img/shopping-cart.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="livro">
+                    <div class="remover">
+                        <a href="javascript:removerProduto()">
+                            <img src="img/circle-xmark-regular.svg" class="img_remover" alt="remover livro">
+                        </a>
+                    </div>
+                    <img src="" class="img_livro" alt="livro adicionado">
+                    <span class="name">nome do livro</span>
+                    <div class="adicionar_carrinho">
+                        <span class="preco_livro">R$50.00</span>
+                        <img class="shopping_cart_favorites" src="img/shopping-cart.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="livro">
+                    <div class="remover">
+                        <a href="javascript:removerProduto()">
+                            <img src="img/circle-xmark-regular.svg" class="img_remover" alt="remover livro">
+                        </a>
+                    </div>
+                    <img src="" class="img_livro" alt="livro adicionado">
+                    <span class="name">nome do livro</span>
+                    <div class="adicionar_carrinho">
+                        <span class="preco_livro">R$50.00</span>
+                        <img class="shopping_cart_favorites" src="img/shopping-cart.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="livro">
+                    <div class="remover">
+                        <a href="javascript:removerProduto()">
+                            <img src="img/circle-xmark-regular.svg" class="img_remover" alt="remover livro">
+                        </a>
+                    </div>
+                    <img src="" class="img_livro" alt="livro adicionado">
+                    <span class="name">nome do livro</span>
+                    <div class="adicionar_carrinho">
+                        <span class="preco_livro">R$50.00</span>
+                        <img class="shopping_cart_favorites" src="img/shopping-cart.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="livro">
+                    <div class="remover">
+                        <a href="javascript:removerProduto()">
+                            <img src="img/circle-xmark-regular.svg" class="img_remover" alt="remover livro">
+                        </a>
+                    </div>
+                    <img src="" class="img_livro" alt="livro adicionado">
+                    <span class="name">nome do livro</span>
+                    <div class="adicionar_carrinho">
+                        <span class="preco_livro">R$50.00</span>
+                        <img class="shopping_cart_favorites" src="img/shopping-cart.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="livro">
+                    <div class="remover">
+                        <a href="javascript:removerProduto()">
+                            <img src="img/circle-xmark-regular.svg" class="img_remover" alt="remover livro">
+                        </a>
+                    </div>
+                    <img src="" class="img_livro" alt="livro adicionado">
+                    <span class="name">nome do livro</span>
+                    <div class="adicionar_carrinho">
+                        <span class="preco_livro">R$50.00</span>
+                        <img class="shopping_cart_favorites" src="img/shopping-cart.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="livro">
+                    <div class="remover">
+                        <a href="javascript:removerProduto()">
+                            <img src="img/circle-xmark-regular.svg" class="img_remover" alt="remover livro">
+                        </a>
+                    </div>
+                    <img src="" class="img_livro" alt="livro adicionado">
+                    <span class="name">nome do livro</span>
+                    <div class="adicionar_carrinho">
+                        <span class="preco_livro">R$50.00</span>
+                        <img class="shopping_cart_favorites" src="img/shopping-cart.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="meios">
@@ -68,3 +227,10 @@
     </footer>
 </body>
 </html>
+<!-- <ul class="avaliacao">
+    <li class="star-icon ativo" data-avaliacao="1"></li>
+    <li class="star-icon" data-avaliacao="2"></li>
+    <li class="star-icon" data-avaliacao="3"></li>
+    <li class="star-icon" data-avaliacao="4"></li>
+    <li class="star-icon" data-avaliacao="5"></li>
+</ul> tag para avaliação-->

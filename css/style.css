@@ -118,12 +118,16 @@ h1{
     margin-left: 15px;
 }
 
-.carrinho {
-    width: 80px;
-    height: 90px;
+.carrinho{
+    width: 34px;
+    height: 34px;
     font-size: 30px;
     background-color: white;
     border: none;
     color: black;
+    margin: 5px 7px 0px 0px;
+}
+.carrinho:hover{
+    cursor: pointer;
 }
 
