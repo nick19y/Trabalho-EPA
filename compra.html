@@ -3,7 +3,6 @@
 <head>
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="assets.css">
@@ -63,7 +62,9 @@
                         <h4 id="quantidade_cesta">Quantidade</h4>
                         <div class="incluir_qtd">
                             <div class="qtd_js">
+                                <h4 class="remover_produto">-</h4>
                                 <h4 class="qtd_js_p">1</h4>
+                                <h4 class="adicionar_produto">+</h4>
                             </div>
                         </div>
                     </div>
@@ -76,33 +77,87 @@
                         </div>
                     </div>
                 </div>
+                <div class="tabela_produtos">
+                    <div class="produtos_cesta">
+                        <h4 id="produto_cesta"></h4>
+                        <div class="incluir_produtos">
+                            <div class="item_cesta">
+                                <img class="img_cesta" src="imagens dos livros/livros ficcao/2001 uma odisseia no espaco - arther c.clarke.jpg" alt="">
+                                <div class="titulo_livro_cesta">
+                                    <span><strong>Uma Odisseia no Espaço</strong></span><br>
+                                    <span class="txt_cesta">Válido e entregue pelo MyBooks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qtd_cesta">
+                        <h4 id="quantidade_cesta"></h4>
+                        <div class="incluir_qtd">
+                            <div class="qtd_js">
+                                <h4 class="remover_produto">-</h4>
+                                <h4 class="qtd_js_p">1</h4>
+                                <h4 class="adicionar_produto">+</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prc_cesta">
+                        <h4 id="preco_cesta"></h4>
+                        <div class="incluir_cesta">
+                            <div class="preco_js">
+                                <h4 class="preco_produto_cesta">R$50.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
             </div>
             <div class="resumo_pedido">
                 <div class="resumo_pedido_titulo"><h2>Resumo do Pedido</h2></div>
+                <div class="pedido_frete">
+                    <div class="qtd_produtos_pedido">
+                        <p>2 produtos</p>
+                        <p>R$100.00</p>
+                    </div>
+                    <div class="frete">
+                        <p>Frete</p>
+                        <p>-</p>
+                    </div>
+                </div>
+                <div class="preco_total_resumo">
+                    <p>Total</p>
+                    <p>R$100.00</p>
+                </div>
+                <button class="continuar_resumo">Continuar</button>
+                <div class="adicionar_produtos_resumo">
+                    <a href="index.html">adicionar mais produtos</a>
+                </div>
+                <p>possui cupom ou vale? você poderá </p><br> 
+                    <p id="segunda_linha_resumo">usá-los na etapa de pagamento.</p>
+                <div class="cupom_resumo">
+                </div>
             </div>
         </div>
     </main>
     <footer>
         <div class="meios">
         <div class="pag">
-    <p>Meios de Pagamento</p>
+    <p></p>
     <br>
     <img src="img/BandeirasCartoesBancos.png" >
     </div>
     <div class="rede">
-    <p>Redes Sociais</p>
+    <p></p>
     <br>
         <img src="img/links.PNG" >
         </div>
     </div>
         <div class="central">
-            <p>Central de atendimento</p>
+            <p></p>
         </div>
         <div class="desen">
-            <p>desenvolvedores</p>
+            <p></p>
         </div>
         <div class="conosco">
-            <p>estudo conosco</p>
+            <p></p>
         </div>
     </footer>
 </body>
