@@ -1,0 +1,64 @@
+.carrinho_pedido{
+    display: grid;
+    grid-template-areas: 
+    "div1", "div2"
+    ;
+    grid-template-columns: 75% 25%;
+    margin: 5% 15% 0% 10%;
+}
+.titulo_cesta{
+    grid-area: div1;
+    background-color: #fff;
+}
+.titulo_livro_cesta{
+    margin-top: 15%;
+    margin-left: 15px;
+}
+.resumo_pedido{
+    background-color: #f2f2f2;
+}
+.resumo_pedido_titulo{
+    grid-area: div2;
+}
+.tabela_produtos{
+    display: flex;
+}
+.produtos_cesta{
+    width: 60%;
+    grid-area: div3;
+}
+.qtd_cesta{
+    width: 20%;
+    grid-area: div4;
+}
+.prc_cesta{
+    width: 20%;
+    padding-left: 5px;
+    grid-area: div5;
+}
+.item_cesta{
+    display: flex;
+}
+.img_cesta{
+    padding-left: 5rem;
+    height: 20rem;
+    width: 20rem;
+    margin-left: -22%;
+}
+.qtd_js{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55%;
+    margin-right: 20%;
+}
+.preco_cesta{
+    padding-left: 10%;
+}
+.preco_produto_cesta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55%;
+    margin-right: 65%;
+}

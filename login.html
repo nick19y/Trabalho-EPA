@@ -45,15 +45,16 @@
     <main>
         <div class="container">
             <div class="texto">
-            <h1>MyBooks</h1>
+            <h1 style="cursor: context-menu;">MyBooks</h1>
             <h2>O MyBooks ajuda você a se conectar com o mundo que faz parte da sua vida.</h2>
             </div>
-            <form action="">
+            <!-- reuturn false no onsubmit para não enviar o formulario para nenhum lugar -->
+            <form onsubmit="return false">
                 <fieldset>
                         <input type="email" id="email" placeholder="Email ou telefone" autocomplete="on">
                         <br>
                         <input type="password" id="senha" placeholder="Senha" autocomplete="off">
-                        <button onclick="abreIndex()" id="button1">Entrar</button>
+                        <button id="button1">Entrar</button>
                         <p>Esqueceu a senha?</p>
                         <div class="botao2">
                         <button id="button2">Criar nova conta</button>
@@ -62,16 +63,5 @@
             </form>
         </div>
     </main>
-    <footer>
-        <div class="meios">
-        <div class="pag">
-    <br>
-    <img src="img/BandeirasCartoesBancos.png" >
-    </div>
-    <div class="rede">
-    <br>
-        <img src="img/links.PNG" >
-        </div>
-    </footer>
 </body>
 </html>
