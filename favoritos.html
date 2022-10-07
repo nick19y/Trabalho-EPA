@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="assets.css">
     <link rel="stylesheet" href="css/favoritos.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
@@ -23,10 +24,26 @@
 <body>
     <header>
         <nav>
-            <!-- font awesome -->
-            <div class="logo">
-                <img src="img/livros_logo.png">
-                <h1>MyBooks</h1>
+            <div class="logo_menu">
+                <div class="img_menu_sidebar">
+                    <div class="dp-menu">
+                        <ul>
+                            <li><a class="a_img" href="#"><img class="menu_sidebar_header" src="img/menu-bars-solid.svg"></a>
+                                <ul class="itens_menu_sandwich">
+                                    <li><a href="#">Ficção</a></li>
+                                    <li><a href="#">Terror</a></li>
+                                    <li><a href="#">Suspense</a></li>
+                                    <li><a href="#series">Brasileiros</a></li>
+                                    <li><a href="#">Romance</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="img/livros_logo.png">
+                    <h1>MyBooks</h1>
+                </div>
             </div>
             <div class="right-menu">
                 <div class="search_bar">
@@ -38,8 +55,8 @@
                 <div class="botoes">
                     <button type="submit" class="favoritos">♡</button>
                     <img class="carrinho" src="img/shopping-cart.webp" alt="">
-                    <img src="img/sign_up.svg" class="sign-up" style="margin-top: 5px;">
                 </div>
+                <img src="img/sign_up.svg" class="sign-up">
                 <h4 class="cadastro">Entre ou <br> Cadastre-se</h4>
             </div>
         </nav>

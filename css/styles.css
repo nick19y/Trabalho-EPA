@@ -86,3 +86,15 @@ h1{
 .cadastro:hover{
     cursor: pointer;
 }
+.logo_menu{
+    margin-top: 1%;
+    display: flex;
+}
+.img_menu_sidebar{
+    margin: -5% 25% 15% 0%;
+    cursor: pointer;
+}
+.menu_sidebar_header{
+    height: 3rem;
+    margin: 5%;
+}

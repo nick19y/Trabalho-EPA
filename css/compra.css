@@ -109,3 +109,9 @@
     margin-top: -15%;
     margin-left: 7%;
 }
+.remover_produto:hover{
+    cursor: pointer;
+}
+.adicionar_produto:hover{
+    cursor: pointer;
+}
