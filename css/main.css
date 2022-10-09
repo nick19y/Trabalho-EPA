@@ -1,0 +1,186 @@
+:root {
+    --primary-color: rgb(226, 224, 224);
+    --secondary-color: rgb(0, 119, 255);
+}
+
+main {
+    animation: Lado 2s forwards;
+}
+
+@keyframes Lado {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+#section-1 {
+    height: 500px;
+    background-color: var(--primary-color);
+}
+
+#section-2 {
+    background-color: var(--primary-color);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+    background-color: var(--primary-color);
+    flex-direction: column;
+}
+
+.linha-favoritos {
+    outline: 1px solid rgb(63, 59, 59);
+    width: 75vw;
+    height: 235px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.p-favorito {
+    font-size: 24px;
+    height: 30px;
+    width: 500px;
+    color: rgb(63, 59, 59);
+    margin-right: 640px;
+    margin-bottom: 1px;
+}
+
+.nav-favorito {
+    width: 900px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.img-a {
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 130px;
+}
+
+.a-1 {
+    grid-area: a-1;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.p-populares {
+    font-size: 22px;
+    height: 40px;
+    width: 400px;
+    color: rgb(63, 59, 59);
+    margin-bottom: 5px;
+    border: none;
+    margin-right: 840px;
+}
+
+#livros{
+    width: 1265px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;  
+    overflow: hidden;
+    border: 1px solid var(--primary-color);
+    border-radius: 2px;
+}
+
+#livros div {
+    width: 250px;
+    height: 450px;
+    background-color: white;
+    border-color: rgb(63, 59, 59);
+    border: none;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    flex-direction: column;
+}
+
+
+.a-saiba-mais {
+    border: 1.5px solid black;
+    height: 50px;
+    width: 85%;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    
+}
+
+div .p-saiba-mais {
+    color: black;
+    padding-top: 13px;
+    font-size: 12px;
+}
+
+.a-saiba-mais:hover {
+    cursor: pointer;
+    background-color: rgb(201, 201, 201);
+    transition: 0.8s all;
+} 
+
+.anuncio-1 {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+    .a-anuncio-1 {
+        width: 130px;
+    }
+
+    .p-anuncio-1 {
+        height: 35px;
+        line-height: 20px;
+        margin-top: 10px;
+        font-size: 16px;
+        color: black;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    
+
+.estrela-anuncio-1 {
+    width: 100px;
+    margin-right: 110px;
+}
+
+.preco-del-1 {
+    align-self: flex-start;
+    margin-left: 22px;
+}
+
+.preco-h2-1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-right: 110px;
+}
+
+.carrinho_preco_h2{
+    display: flex;
+    justify-content: space-between;
+}
+.carrinho_img_preco_h2{
+    width: 25px;
+    height: 25px;
+}

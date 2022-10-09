@@ -17,6 +17,14 @@
     margin-top: 27%;
 }
 
+.carousel-control-prev-icon{
+    margin-top: -4rem;
+}
+
+.carousel-control-next-icon{
+    margin-top: -4rem;
+}
+
 h5 {
     color: white;
 }
