@@ -112,10 +112,11 @@ main {
 
 
 .a-saiba-mais {
-    border: 1.5px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding-top: -5px;
     height: 50px;
-    width: 85%;
-    border-radius: 6px;
+    width: 40%;
     margin-bottom: 5px;
     display: flex;
     justify-content: center;
@@ -126,14 +127,24 @@ main {
 
 div .p-saiba-mais {
     color: black;
-    padding-top: 13px;
+    padding-top: 10px;
     font-size: 12px;
+    border-radius: 6px;
+    margin-right: 100%;
+    padding-left: 1rem;
 }
+.p-saiba-mais-heart{
+    color: black;
+    padding-top: 10px;
+    font-size: 12px;
+    border-radius: 6px;   
+    margin-left: 30%;
+    padding-right: 1rem; 
+}
+
 
 .a-saiba-mais:hover {
     cursor: pointer;
-    background-color: rgb(201, 201, 201);
-    transition: 0.8s all;
 } 
 
 .anuncio-1 {
@@ -183,4 +194,13 @@ div .p-saiba-mais {
 .carrinho_img_preco_h2{
     width: 25px;
     height: 25px;
+}
+.carrihno_favoritos_index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.btn-adicionar-favoritos{
+    display: flex;
 }
