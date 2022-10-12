@@ -18,6 +18,7 @@
     <title>Projeto EPA</title>
     <script src="script/script.js" defer></script>
     <script src="js/index.js" defer></script>
+    <script src="script/botoes_cabecalho.js" defer></script>
 </head>
 <body>
     <header>
@@ -56,12 +57,16 @@
                 </div>
                 <img src="img/sign_up.svg" class="sign-up">
                 <h4 class="cadastro">Entre ou <br> Cadastre-se</h4>
+                <div id="botoes-1">
+                    <button class="preto">🌜</button>
+                    <button class="cinza">🌞</button>
+                </div>  
             </div>
         </nav>
     </header>
     <main>
-        <section id="section-1" class="section-preto-1" style="display: flex; justify-content:center; align-items: center;">
-            <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel" style="margin-top: -10rem;">
+        <section id="section-1" class="section-preto-1">
+            <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="5000" style="margin-top: 30px;">
                         <img src="img-main/a coisa IT.png" class="d-block w-100" alt="...">
@@ -111,18 +116,15 @@
             </div>
         </section>
         <section id="section-2" class="section-preto-2" style="margin-top: -10rem;">
-                <p class="p-favorito">Navegue pelo seu universo favorito</p>
+                <!-- <div class="linha-favorito"></div> -->
                 <div class="nav-favorito">
-                    <a href="" class=".a-1"><img src="img-main/prototipo-favorito.png" class="img-a"></a>
-                    <a href="" class=".a-1"><img src="img-main/prototipo-favorito.png" class="img-a"></a>
-                    <a href="" class=".a-1"><img src="img-main/prototipo-favorito.png" class="img-a"></a>
-                    <a href="" class=".a-1"><img src="img-main/prototipo-favorito.png" class="img-a"></a>
-                    <a href="" class=".a-1"><img src="img-main/prototipo-favorito.png" class="img-a"></a>
-                    <a href="" class=".a-1"><img src="img-main/prototipo-favorito.png" class="img-a"></a>
-                    <a href="" class=".a-1"><img src="img-main/prototipo-favorito.png" class="img-a"></a>
-                    <a href="" class=".a-1"><img src="img-main/prototipo-favorito.png" class="img-a"></a>
+                    <a href="" class=".a-1"><h1 style="font-size: 18px; color: black; text-align: center;">Ficção</h1><img src="img-main/ficcao-cientifica.png" class="img-a"></a>
+                    <a href="" class=".a-1"><h1 style="font-size: 18px; color: black; text-align: center;">Terror</h1><img src="img-main/terror.png" class="img-a"></a>
+                    <a href="" class=".a-1"><h1 style="font-size: 18px; color: black; text-align: center;">Suspense</h1><img src="img-main/suspense.png" class="img-a"></a>
+                    <a href="" class=".a-1"><h1 style="font-size: 18px; color: black; text-align: center;">Brasileiros</h1><img src="img-main/brasileiro.png" class="img-a"></a>
+                    <a href="" class=".a-1"><h1 style="font-size: 18px; color: black; text-align: center;">Romance</h1><img src="img-main/romance.png" class="img-a"></a>
                 </div>
-            </section>
+        </section>
             <section id="section-3" class="section-preto-3">
                     <p class="p-populares" id="p-populares-1">Mais populares</p>
                     <div id="livros">
@@ -136,7 +138,7 @@
                             </a>
                             <del class="preco-del-1">R$59,99</del>
                                 <h2 class="preco-h2-1">R$34,99</h2>
-                                <a class="a-saiba-mais" href="">
+                            <a class="a-saiba-mais" href="">
                                     <p class="p-saiba-mais">
                                         <button><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
@@ -154,7 +156,7 @@
                             </a>
                             <del class="preco-del-1">R$134,99</del>
                                 <h2 class="preco-h2-1">R$79,99</h2>
-                                <a class="a-saiba-mais" href="">
+                            <a class="a-saiba-mais" href="">
                                     <p class="p-saiba-mais">
                                         <button><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
@@ -174,13 +176,13 @@
                             <del class="preco-del-1">R$39,99</del>
                             <h2 class="preco-h2-1">R$29,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
-                            </a>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                         <div class="livros-populares-4">
                             <a href="" class="anuncio-1">
@@ -193,13 +195,13 @@
                             <del class="preco-del-1">R$24,99</del>
                             <h2 class="preco-h2-1">R$19,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
-                            </a>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                         <div class="livros-populares-5">
                             <a href="" class="anuncio-1">
@@ -212,13 +214,51 @@
                             <del class="preco-del-1">R$47,99</del>
                             <h2 class="preco-h2-1">R$41,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
+                        </div>
+                        <div class="livros-populares-4">
+                            <a href="" class="anuncio-1">
+                                <img src="img-anuncios/a arte da guerra.png" class="a-anuncio-1"
+                                style="width: 170px; margin-top: 3px;">
+                                <p class="p-anuncio-1">A Arte da Guerra - <br><b>Sun Tzu</b></p>
+                                
+                                <span></span>
                             </a>
+                            <del class="preco-del-1">R$32,99</del>
+                            <h2 class="preco-h2-1">R$27,99</h2>
+                            <a class="a-saiba-mais" href="">
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
+                        </div>
+                        <div class="livros-populares-5">
+                            <a href="" class="anuncio-1">
+                                <img src="img-anuncios/o homem de giz.png" class="a-anuncio-1"
+                                style="width: 158px;">
+                                <p class="p-anuncio-1">O homem de giz - <b>C.J. Tudor</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$34,99</del>
+                            <h2 class="preco-h2-1">R$31,99</h2>
+                            <a class="a-saiba-mais" href="">
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                     </div>
             </section>    
@@ -236,13 +276,13 @@
                             <del class="preco-del-1">R$52,99</del>
                             <h2 class="preco-h2-1">R$38,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
-                            </a>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                         <div class="livros-populares-2">
                             <a href="" class="anuncio-1">
@@ -255,13 +295,13 @@
                             <del class="preco-del-1">R$88,99</del>
                             <h2 class="preco-h2-1">R$56,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
-                            </a>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                         <div class="livros-populares-3">
                             <a href="" class="anuncio-1">
@@ -274,13 +314,13 @@
                             <del class="preco-del-1">R$27,99</del>
                             <h2 class="preco-h2-1">R$18,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
-                            </a>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                         <div class="livros-populares-4">
                             <a href="" class="anuncio-1">
@@ -293,13 +333,13 @@
                             <del class="preco-del-1">R$37,99</del>
                             <h2 class="preco-h2-1">R$29,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
-                            </a>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                         <div class="livros-populares-5">
                             <a href="" class="anuncio-1">
@@ -312,13 +352,51 @@
                             <del class="preco-del-1">R$67,99</del>
                             <h2 class="preco-h2-1">R$49,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
+                        </div>
+                        <div class="livros-populares-4">
+                            <a href="" class="anuncio-1">
+                                <img src="img-anuncios/harry poter e a camara secreta.png" class="a-anuncio-1"
+                                style="width: 174px;">
+                                <p class="p-anuncio-1">Harry Potter e a Câmara Secreta - <b>J. K. Rowling</b></p>
+                                
+                                <span></span>
                             </a>
+                            <del class="preco-del-1">R$54,99</del>
+                            <h2 class="preco-h2-1">R$48,99</h2>
+                            <a class="a-saiba-mais" href="">
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
+                        </div>
+                        <div class="livros-populares-5">
+                            <a href="" class="anuncio-1">
+                                <img src="img-anuncios/borboletas no jardim.png" class="a-anuncio-1"
+                                style="width: 178px;">
+                                <p class="p-anuncio-1">O Jardim das Borboletas - <b>Dot Hutchinson</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$23,99</del>
+                            <h2 class="preco-h2-1">R$16,99</h2>
+                            <a class="a-saiba-mais" href="">
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                     </div>
             </section>
@@ -336,13 +414,13 @@
                             <del class="preco-del-1">R$32,99</del>
                             <h2 class="preco-h2-1">R$23,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
-                            </a>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                         <div class="livros-populares-2">
                             <a href="" class="anuncio-1">
@@ -355,13 +433,13 @@
                             <del class="preco-del-1">R$61,99</del>
                             <h2 class="preco-h2-1">R$48,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
-                            </a>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                         <div class="livros-populares-3">
                             <a href="" class="anuncio-1">
@@ -374,13 +452,13 @@
                             <del class="preco-del-1">R$34,99</del>
                             <h2 class="preco-h2-1">R$26,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
-                            </a>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                         <div class="livros-populares-4">
                             <a href="" class="anuncio-1">
@@ -393,13 +471,13 @@
                             <del class="preco-del-1">R$69,99</del>
                             <h2 class="preco-h2-1">R$34,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
-                            </a>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                         <div class="livros-populares-5">
                             <a href="" class="anuncio-1">
@@ -412,13 +490,51 @@
                             <del class="preco-del-1">R$57,99</del>
                             <h2 class="preco-h2-1">R$45,99</h2>
                             <a class="a-saiba-mais" href="">
-                                <p class="p-saiba-mais">
-                                    <button><img src="img/shopping-cart.webp" class="carrinho"></button>
-                                </p>
-                                <p class="p-saiba-mais-heart">
-                                    <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
-                                </p>
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
+                        </div>
+                        <div class="livros-populares-4">
+                            <a href="" class="anuncio-1">
+                                <img src="img-anuncios/a cabana da solidao.png" class="a-anuncio-1"
+                                style="width: 178px;">
+                                <p class="p-anuncio-1">A Cabana da Solidão - <b>Antonio Demarchi</b></p>
+                                
+                                <span></span>
                             </a>
+                            <del class="preco-del-1">R$26,99</del>
+                            <h2 class="preco-h2-1">R$19,99</h2>
+                            <a class="a-saiba-mais" href="">
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
+                        </div>
+                        <div class="livros-populares-5">
+                            <a href="" class="anuncio-1">
+                                <img src="img-anuncios/o poder da manipulação.png" class="a-anuncio-1"
+                                style="width: 171px; margin-top: 3px;">
+                                <p class="p-anuncio-1">O Poder da Manipulação - Jacob Petry<b></b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$41,99</del>
+                            <h2 class="preco-h2-1">R$32,99</h2>
+                            <a class="a-saiba-mais" href="">
+                                    <p class="p-saiba-mais">
+                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </a>
                         </div>
                     </div>
             </section>

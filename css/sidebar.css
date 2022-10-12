@@ -32,6 +32,7 @@
 .dp-menu ul ul{
     display: none;
     position: absolute;
+    z-index: 9;
 }
 .dp-menu ul li:hover ul{
     display: block;
@@ -41,4 +42,60 @@
 }
 .dp-menu ul ul li a{
     display: block;
+}
+
+#botoes-1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.preto {
+    width: 30px;
+    height: 25px;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    animation: rodar 1.5s forwards;
+}
+
+.cinza {
+    width: 30px;
+    height: 25px;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 5px;
+    animation: rodar 1.5s forwards;
+}
+
+.search_bar {
+    background: none;
+    border: 2.5px solid black;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: rodar 1s;
+}
+
+
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+}
+
+.search_text::placeholder {
+    color: black;
 }

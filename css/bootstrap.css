@@ -1,40 +1,22 @@
 .carousel-inner {
-    width: 600px;
+    width: 1000px;
     margin: auto;
 }
 
+.carousel-inner .carousel-item img {
+    border: 1px solid var(--primary-color);
+}
+
 .carousel-control-prev {
-    background: transparent;
-    height: 8vh;
-    width: 3vw;
-    margin-top: 27%;
+    border-radius: 50%;
+    height: 40px;
+    width: 45px;
+    margin-top: 20%;
 }
 
 .carousel-control-next {
-    background: transparent;
-    height: 8vh;
-    width: 3vw;
-    margin-top: 27%;
-}
-
-.carousel-control-prev-icon{
-    margin-top: -4rem;
-}
-
-.carousel-control-next-icon{
-    margin-top: -4rem;
-}
-
-h5 {
-    color: white;
-}
-
-p {
-    color: white;
-}
-
-.main-1 {
-    width: 98.7vw;
-    height: 100vh;
-    
+    border-radius: 50%;
+    height: 40px;
+    width: 45px;
+    margin-top: 20%;
 }

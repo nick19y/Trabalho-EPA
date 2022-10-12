@@ -17,8 +17,9 @@ main {
 }
 
 #section-1 {
-    height: 500px;
+    height: 550px;
     background-color: var(--primary-color);
+    z-index: 9;
 }
 
 #section-2 {
@@ -39,6 +40,11 @@ main {
     flex-direction: column;
 }
 
+#section-3 #livros{
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
 .linha-favoritos {
     outline: 1px solid rgb(63, 59, 59);
     width: 75vw;
@@ -54,6 +60,7 @@ main {
     color: rgb(63, 59, 59);
     margin-right: 640px;
     margin-bottom: 1px;
+
 }
 
 .nav-favorito {
@@ -61,20 +68,29 @@ main {
     height: 120px;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
+    z-index: 10;
 }
+
+/* .linha-favorito {
+    position: absolute;
+    width: 1000px;
+    height: 40px;
+    background-color: black;
+    margin-top: 105px;
+    z-index: 1;
+} */
 
 .img-a {
     border-radius: 15px;
-    margin-top: 15px;
-    width: 130px;
+    width: 160px;
+    z-index: 2;
+    border: 6px solid black;
+    background-color: white;
 }
 
 .a-1 {
-    grid-area: a-1;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
+    width: 20px;
 }
 
 .p-populares {
@@ -89,17 +105,17 @@ main {
 
 #livros{
     width: 1265px;
-    height: 450px;
     display: flex;
     justify-content: space-between;  
     overflow: hidden;
     border: 1px solid var(--primary-color);
     border-radius: 2px;
+    gap: 1px;
 }
 
 #livros div {
-    width: 250px;
-    height: 450px;
+    width: 252px;
+    height: 420px;
     background-color: white;
     border-color: rgb(63, 59, 59);
     border: none;
@@ -108,6 +124,7 @@ main {
     align-items: center;
     border-radius: 2px;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 
@@ -122,7 +139,6 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 45px;
-    
 }
 
 div .p-saiba-mais {
@@ -141,7 +157,6 @@ div .p-saiba-mais {
     margin-left: 30%;
     padding-right: 1rem; 
 }
-
 
 .a-saiba-mais:hover {
     cursor: pointer;
@@ -194,13 +209,4 @@ div .p-saiba-mais {
 .carrinho_img_preco_h2{
     width: 25px;
     height: 25px;
-}
-.carrihno_favoritos_index{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-}
-.btn-adicionar-favoritos{
-    display: flex;
 }
