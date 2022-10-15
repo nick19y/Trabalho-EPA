@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 a{
     color: rgb(0, 119, 255);
@@ -99,9 +98,18 @@ h1{
     margin: 5%;
     z-index: 10;
 }
-.a-saiba-mais{
-    margin-top: 20px;
-}
 .preco-del-1{
     margin-top: 25px;
+}
+.a-saiba-mais{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+.p-saiba-mais{
+    padding-left: 15px;
+}
+.p-saiba-mais-heart{
+    width: 30%;
+    margin: 5px 0 0 7.5em;
 }

@@ -104,63 +104,28 @@ main {
 }
 
 #livros{
+    height: 420px;
     width: 1265px;
+    border-color: rgb(63, 59, 59);
     display: flex;
     justify-content: space-between;  
     overflow: hidden;
-    border: 1px solid var(--primary-color);
+    border: 1px solid black;
     border-radius: 2px;
     gap: 1px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    background-color: white;
 }
 
-#livros div {
+#livros .livros-populares-1 .preco-del-1{
     width: 252px;
-    height: 420px;
-    background-color: white;
-    border-color: rgb(63, 59, 59);
-    border: none;
-    border-radius: 1px;
-    display: flex;
     align-items: center;
     border-radius: 2px;
     flex-direction: column;
     flex-shrink: 0;
 }
-
-
-.a-saiba-mais {
-    display: flex;
-    justify-content: space-around;
-    padding-top: -5px;
-    height: 50px;
-    width: 40%;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 45px;
-}
-
-div .p-saiba-mais {
-    color: black;
-    padding-top: 10px;
-    font-size: 12px;
-    border-radius: 6px;
-    margin-right: 100%;
-    padding-left: 1rem;
-}
-.p-saiba-mais-heart{
-    color: black;
-    padding-top: 10px;
-    font-size: 12px;
-    border-radius: 6px;   
-    margin-left: 30%;
-    padding-right: 1rem; 
-}
-
-.a-saiba-mais:hover {
-    cursor: pointer;
-} 
 
 .anuncio-1 {
     width: 200px;
@@ -172,6 +137,7 @@ div .p-saiba-mais {
 }
     .a-anuncio-1 {
         width: 130px;
+        margin-left: 25px;
     }
 
     .p-anuncio-1 {
@@ -193,13 +159,14 @@ div .p-saiba-mais {
 
 .preco-del-1 {
     align-self: flex-start;
-    margin-left: 22px;
+    margin-left: 15px;
 }
 
 .preco-h2-1 {
     font-size: 26px;
     font-weight: 700;
     margin-right: 110px;
+    margin-left: 15px;
 }
 
 .carrinho_preco_h2{
