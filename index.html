@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/menu_lateral.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
@@ -19,6 +20,7 @@
     <script src="script/script.js" defer></script>
     <script src="js/index.js" defer></script>
     <script src="script/botoes_cabecalho.js" defer></script>
+    <script src="js/carrinho_beta.js" defer></script>
 </head>
 <body>
     <header>
@@ -64,6 +66,41 @@
             </div>
         </nav>
     </header>
+    <div class="body1">
+        <div class="nav1">
+            <div class="titulo_fechar">
+                <h2 class="titulo_carrinho">Carrinho</h2>
+                <div class="fechar_btn"><img src="img/circle-xmark-regular.svg" id="fechar"></div>
+            </div>
+            <ul class="lista_sidebar">
+                <!-- <li class="quantidade_img">
+                    <img src="imagens dos livros/livros ficcao/2001 uma odisseia no espaco - arther c.clarke.jpg" alt="" class="img_sidebar">
+                    <div class="preco_carrinho_sidebar">R$50.00</div>
+                    <div class="quantidade_carrinho"></div>
+                    <div class="imagem_remover">
+                        <img src="img/trash.svg" class="imagem_lixo_menu">
+                    </div>
+                </li>
+                <li class="quantidade_img">
+                    <img src="imagens dos livros/livros ficcao/2001 uma odisseia no espaco - arther c.clarke.jpg" alt="" class="img_sidebar">
+                    <div class="preco_carrinho_sidebar">R$50.00</div>
+                    <div class="quantidade_carrinho"></div>
+                    <div class="imagem_remover">
+                        <img src="img/trash.svg" class="imagem_lixo_menu">
+                    </div>
+                </li> -->
+            </ul>
+            <div class="suposto_footer">
+                <div class="total_side_preco">
+                    <h2 class="total_side_menu">Total</h2>
+                    <div class="total_preco_side">R$00.00</div>
+                </div>
+                <div class="comprar_centralizado">
+                    <button class="comprar_side_menu" onclick="finalizarCompra()">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <section id="section-1" class="section-preto-1">
             <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
@@ -141,7 +178,7 @@
                             <div>
                                 <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_1"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -160,7 +197,7 @@
                                 <h2 class="preco-h2-1">R$79,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_2"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -179,7 +216,7 @@
                             <h2 class="preco-h2-1">R$29,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_3"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -198,7 +235,7 @@
                             <h2 class="preco-h2-1">R$19,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_4"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -217,7 +254,7 @@
                             <h2 class="preco-h2-1">R$41,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_5"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -236,7 +273,7 @@
                             <h2 class="preco-h2-1">R$27,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_6"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -255,7 +292,7 @@
                             <h2 class="preco-h2-1">R$31,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_7"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -279,7 +316,7 @@
                             <h2 class="preco-h2-1">R$38,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_8"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -298,7 +335,7 @@
                             <h2 class="preco-h2-1">R$56,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_9"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -317,7 +354,7 @@
                             <h2 class="preco-h2-1">R$18,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_10"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -336,7 +373,7 @@
                             <h2 class="preco-h2-1">R$29,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_11"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -355,7 +392,7 @@
                             <h2 class="preco-h2-1">R$49,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_12"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -374,7 +411,7 @@
                             <h2 class="preco-h2-1">R$48,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_13"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -393,7 +430,7 @@
                             <h2 class="preco-h2-1">R$16,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_14"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -417,7 +454,7 @@
                             <h2 class="preco-h2-1">R$23,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_15"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -436,7 +473,7 @@
                             <h2 class="preco-h2-1">R$48,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_16"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -455,7 +492,7 @@
                             <h2 class="preco-h2-1">R$26,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_17"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -474,7 +511,7 @@
                             <h2 class="preco-h2-1">R$34,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_18"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -493,7 +530,7 @@
                             <h2 class="preco-h2-1">R$45,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_19"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -512,7 +549,7 @@
                             <h2 class="preco-h2-1">R$19,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_20"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -531,7 +568,7 @@
                             <h2 class="preco-h2-1">R$32,99</h2>
                             <div class="a-saiba-mais">
                                     <p class="p-saiba-mais">
-                                        <button><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                        <button id="shopping_cart_21"><img src="img/shopping-cart.webp" class="carrinho"></button>
                                     </p>
                                     <p class="p-saiba-mais-heart">
                                         <button style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
@@ -552,8 +589,6 @@
                     <img src="logoRedes/mastercard.png"  class="img-pag-master">
 
                     <img src="logoRedes/elo.png" alt=""  height=60px  width="80px" class="img-pag-elo">
-
-                    <img src="logoRedes/american.png.crdownload" alt="" class="img-pag-american">
 
                 </div>
                 <div class="redes">
