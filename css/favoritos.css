@@ -1,12 +1,8 @@
-#main-dos-favoritos {
-    background-color: var(--primary-color);
-}
-
 .favoritos1{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    margin: 15px 0px 15px;
 }
 .lista{
     display: flex;
@@ -27,21 +23,10 @@
     height: 35rem;
 }
 .remover{
-    width: 19px;
     display: flex;
-    justify-content: center;
-    align-self: flex-end;
+    justify-content: flex-end;
     margin-bottom: 5px;
-    background-color: white;
-    border-radius: 40px;
 }
-
-.remover:hover {
-    cursor: pointer;
-    background-color: red;
-    transition: 0.5s all;
-}
-
 .img_remover{
     width: 30px;
     height: 20px;
@@ -50,10 +35,7 @@
 .img_livro{
     height: 60%;
     width: 100%;
-    box-shadow: 0px 0px 30px 1px rgb(185, 170, 170);
-    background-color: white;
-    border-radius: 10px;
-    border: 10px solid transparent
+    outline: 1px solid black;
 }
 .preco_livro{
     font-size: 20px;
@@ -62,9 +44,7 @@
 .adicionar_carrinho{
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px 0px 10px;
-    background-color: white;
-    border-radius: 20px;
+    padding: 0px 10px 0px 10px;
 }
 .shopping_cart_favorites{
     width: 30px;
@@ -82,9 +62,6 @@
 .name{
     margin: 12px 0px 5px;
     padding-left: 10px;
-    padding-bottom: 10px;
-    color: blue;
-    font-size: 18px;
 }
 .star-icon{
     height: 35px;
