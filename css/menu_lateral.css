@@ -31,7 +31,8 @@ a{
     top:0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
     /* overflow: hidden faz com q o elemento filho fique escondido toda vez q ultrapassar a largura ou altura do elemento pai */
     transition: width 0.5s;
 }
@@ -102,4 +103,10 @@ a{
     height: 20px;
     cursor: pointer;
     margin-left: 115px;
+}
+.total_side_menu{
+    color: white;
+}
+.total_preco_side{
+    color: white;
 }

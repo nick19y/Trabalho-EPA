@@ -53,7 +53,7 @@ function listarLivros(){
             <div class="preco_carrinho_sidebar">R$${objeto.preco}</div>
             <div class="quantidade_carrinho"></div>
             <div class="imagem_remover" onclick="removerLivro(${posicao})">
-            <img src="img/trash.svg" class="imagem_lixo_menu">
+            <img src="img/trash.svg" class="imagem_lixo_menu" style="cursor:pointer">
             </div>
             </li>
             `
