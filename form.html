@@ -20,6 +20,7 @@
     <script src="script/script.js" defer></script>
     <script src="js/form.js" defer></script>
     <script src="js/index.js" defer></script>
+    <script src="script/botoes_cabecalho.js" defer></script>
 </head>
 <body>
     <header>
@@ -65,9 +66,9 @@
             </div>
         </nav>
     </header>
-    <main style="margin-bottom: 4rem;">
+    <main style="padding-bottom: 4rem;" class="main-cadastrar">
         <div class="formulario">
-            <form onsubmit="return false;" autocomplete="off">
+            <form action="cadastro.php" method="post">
                 <div class="cadastro_form1">
                     <div class="conteudo_cadastro">
                     <h2>Cadastre-se</h2>

@@ -7,14 +7,14 @@ main {
     animation: Lado 2s forwards;
 }
 
-@keyframes Lado {
+/* @keyframes Lado {
     0% {
         margin-top: 1000px;
     }
     100% {
         margin-top: 0px;
     }
-}
+} */
 
 #section-1 {
     height: 550px;
@@ -45,14 +45,6 @@ main {
     overflow-y: hidden;
 }
 
-.linha-favoritos {
-    outline: 1px solid rgb(63, 59, 59);
-    width: 75vw;
-    height: 235px;
-    border-radius: 20px;
-    margin: auto;
-}
-
 .p-favorito {
     font-size: 24px;
     height: 30px;
@@ -71,15 +63,6 @@ main {
     gap: 2rem;
     z-index: 10;
 }
-
-/* .linha-favorito {
-    position: absolute;
-    width: 1000px;
-    height: 40px;
-    background-color: black;
-    margin-top: 105px;
-    z-index: 1;
-} */
 
 .img-a {
     border-radius: 15px;
@@ -100,23 +83,22 @@ main {
     color: rgb(63, 59, 59);
     margin-bottom: 5px;
     border: none;
-    margin-right: 840px;
+    margin-right: 720px;
 }
 
 #livros{
     height: 420px;
-    width: 1265px;
-    border-color: rgb(63, 59, 59);
+    width: 1125px;
     display: flex;
     justify-content: space-between;  
     overflow: hidden;
-    border: 1px solid black;
-    border-radius: 2px;
-    gap: 1px;
-    border: none;
+    gap: 2px;
     border-radius: 10px;
-    display: flex;
+}
+
+#livros div {
     background-color: white;
+    border-radius: 2px;
 }
 
 #livros .livros-populares-1 .preco-del-1{
@@ -148,9 +130,8 @@ main {
         color: black;
         font-weight: 700;
         text-align: center;
+        margin-left: 13px;
     }
-
-    
 
 .estrela-anuncio-1 {
     width: 100px;
