@@ -224,7 +224,7 @@ let fav21 = [
         id: 112, 
         nome:"A paixão segundo G.H.",
         autor:"Clarice Lispector",
-        img: `src="img/shopping-cart.webp" class="carrinho"`,
+        img: `src="imagens dos livros/livros brasileiros/A paixão segundo G.H., Clarice Lispector.JPG" class="a-anuncio-1" style="width: 140px; margin-right: 15px; margin-top: 10px;"`,
         preco: 50.00
     },
     {
