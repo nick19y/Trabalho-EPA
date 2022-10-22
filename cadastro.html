@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/esqueceu_senha.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Cadastro Concluído</h1>
+    </div>
+    <div class="voltar_btn" style="display: flex; justify-content:center; align-items: center; margin-top: 40px;">
+        <button class="button_form1" id="btn-voltar-index">Voltar</button>
+    </div>
+</body>
+<script>
+    const voltarIndex = document.getElementById("btn-voltar-index");
+    voltarIndex.addEventListener("click", ()=>{
+        window.open("index.html", "_self");
+    })
+</script>
+</html>

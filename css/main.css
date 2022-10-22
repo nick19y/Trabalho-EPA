@@ -7,14 +7,14 @@ main {
     animation: Lado 2s forwards;
 }
 
-/* @keyframes Lado {
+ @keyframes Lado {
     0% {
         margin-top: 1000px;
     }
     100% {
         margin-top: 0px;
     }
-} */
+}
 
 #section-1 {
     height: 550px;
