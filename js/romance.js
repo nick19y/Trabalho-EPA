@@ -88,7 +88,7 @@ shopping_cart_443.addEventListener("click", ()=>{
 });
 shopping_cart_444.addEventListener("click", ()=>{
     produtos_sidebar.push({
-        img: 'src="imagens dos livros/categoria romance/Como   eu era antes de você livro - Jojo Moyes.jpg" class="a-anuncio-1" style="width: 205px;"',
+        img: 'src="imagens dos livros/categoria romance/Como eu era antes de você livro - Jojo Moyes.jpg" class="a-anuncio-1" style="width: 205px;"',
         preco: 19.99,
     })
     listarLivros();
@@ -235,7 +235,7 @@ let fav7 = [
     id: 444, 
         nome:"Como eu era antes de você",
         autor:"Jojo Moyes",
-        img: 'src="imagens dos livros/categoria romance/Como   eu era antes de você livro - Jojo Moyes.jpg" class="a-anuncio-1" style="width: 205px;"',
+        img: 'src="imagens dos livros/categoria romance/Como eu era antes de você livro - Jojo Moyes.jpg" class="a-anuncio-1" style="width: 205px;"',
         preco: 19.99,
     },
     {

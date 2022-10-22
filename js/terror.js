@@ -126,7 +126,7 @@ shopping_cart_558.addEventListener("click", ()=>{
 });
 shopping_cart_559.addEventListener("click", ()=>{
     produtos_sidebar.push({
-        img: 'imagens dos livros/categoria terror/o cemiterio - stephen king.png" class="a-anuncio-1" style="width: 238px;"',
+        img: 'src="imagens dos livros/categoria terror/o cemiterio - stephen king.png" class="a-anuncio-1" style="width: 238px;"',
         preco: 56.99,
     })
     listarLivros();
@@ -215,7 +215,7 @@ let fav5 = [
     },
     {
     id: 554, 
-        no55me:"Box Terríveis Mestres",
+        nome:"Box Terríveis Mestres",
         autor:"Edgar Allan Poe",
         img: 'src="imagens dos livros/categoria terror/Box Terríveis Mestres - Edgar Allan Poe.jpg" class="a-anuncio-1" style="width: 178px;"',
         preco: 19.99,
@@ -252,7 +252,7 @@ let fav5 = [
     id: 559, 
         nome:"O Cemitério",
         autor:"Stephen King",
-        img: 'imagens dos livros/categoria terror/o cemiterio - stephen king.png" class="a-anuncio-1" style="width: 238px;"',
+        img: 'src="imagens dos livros/categoria terror/o cemiterio - stephen king.png" class="a-anuncio-1" style="width: 238px;"',
         preco: 56.99,
     },
     {

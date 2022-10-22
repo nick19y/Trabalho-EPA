@@ -23,4 +23,4 @@ btnCompra.addEventListener("click", function(){
 });
 fecharSideBar.addEventListener("click", function(){
     navSideBar.style.width = '0px';
-})
+});
