@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/assets1.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/menu_lateral.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto EPA</title>
+    <script src="script/script.js" defer></script>
+    <script src="js/index.js" defer></script>
+    <script src="script/botoes_cabecalho.js" defer></script>
+    <!-- <script src="js/carrinho_beta.js" defer></script> -->
+    <script src="js/suspense.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo_menu">
+                <div class="img_menu_sidebar">
+                    <div class="dp-menu">
+                        <ul>
+                            <li><a class="a_img" href="#"><img class="menu_sidebar_header" src="img/menu-bars-solid.svg"></a>
+                                <ul class="itens_menu_sandwich">
+                                    <li><a href="ficcao.html">Ficção</a></li>
+                                    <li><a href="terror.html">Terror</a></li>
+                                    <li><a href="suspense.html">Suspense</a></li>
+                                    <li><a href="basileiro.html">Brasileiros</a></li>
+                                    <li><a href="romance.html">Romance</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="img/livros_logo.png">
+                    <h1>MyBooks</h1>
+                </div>
+            </div>
+            <div class="right-menu">
+                <div class="search_bar">
+                    <input type="text" class="search_text" placeholder="Pesquisar"> 
+                    <a class="search-btn">
+                        <img src="loupe.png" height="20px" width="20px" style="padding: 0;">
+                    </a>
+                </div>
+                <div class="botoes">
+                    <button type="submit" class="favoritos">♡</button>
+                    <img class="carrinho" src="img/shopping-cart.webp" alt="">
+                </div>
+                <img src="img/sign_up.svg" class="sign-up">
+                <h4 class="cadastro">Entre ou <br> Cadastre-se</h4>
+                <div id="botoes-1">
+                    <button class="preto">🌜</button>
+                    <button class="cinza">🌞</button>
+                </div>  
+            </div>
+        </nav>
+    </header>
+    <div class="body1">
+        <div class="nav1">
+            <div class="titulo_fechar">
+                <h2 class="titulo_carrinho">Carrinho</h2>
+                <div class="fechar_btn"><img src="img/circle-xmark-regular.svg" id="fechar"></div>
+            </div>
+            <ul class="lista_sidebar">
+                <!-- <li class="quantidade_img">
+                    <img src="imagens dos livros/livros ficcao/2001 uma odisseia no espaco - arther c.clarke.jpg" alt="" class="img_sidebar">
+                    <div class="preco_carrinho_sidebar">R$50.00</div>
+                    <div class="quantidade_carrinho"></div>
+                    <div class="imagem_remover">
+                        <img src="img/trash.svg" class="imagem_lixo_menu">
+                    </div>
+                </li>
+                <li class="quantidade_img">
+                    <img src="imagens dos livros/livros ficcao/2001 uma odisseia no espaco - arther c.clarke.jpg" alt="" class="img_sidebar">
+                    <div class="preco_carrinho_sidebar">R$50.00</div>
+                    <div class="quantidade_carrinho"></div>
+                    <div class="imagem_remover">
+                        <img src="img/trash.svg" class="imagem_lixo_menu">
+                    </div>
+                </li> -->
+            </ul>
+            <div class="suposto_footer">
+                <div class="total_side_preco">
+                    <h2 class="total_side_menu">Total</h2>
+                    <div class="total_preco_side">R$00.00</div>
+                </div>
+                <div class="comprar_centralizado">
+                    <button class="comprar_side_menu" onclick="finalizarCompra()">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <!-- <section id="section-1" class="section-preto-1">
+            <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000" style="margin-top: 30px;">
+                        <img src="img-main/a coisa IT.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000" style="margin-top: 30px;">
+                        <img src="img-main/A culpa e das estrelas.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">                        
+                            <h5></h5>
+                        <p>.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000" style="margin-top: 30px;">
+                        <img src="img-main/meia noite biblioteca copiar.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 style="margin-right: 500px; font-size: 22px;"></h5>
+                            <p style="margin-right: 500px; font-size: 22px;"></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000" style="margin-top: 30px;">
+                        <img src="img-main/vidas secas.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 style="margin-left: 350px; font-size: 22px"></h5>
+                            <p style="margin-left: 350px; font-size: 22px;"></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000" style="margin-top: 30px;">
+                        <img src="img-main/a garota do lago.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>  
+                </div>
+            </div>
+         </section> -->
+         <section id="section-2" class="section-preto-222"> 
+                <div class="linha-favorito"></div>
+                <div class="nav-favorito">
+                    <a href="ficcao.html" class=".a-1"><h1 style="font-size: 18px; color: black; text-align: center;" class="h1-suspense-111">Ficção</h1><img src="img-main/ficcao-cientifica.png" class="img-a"></a>
+                    <a href="terror.html" class=".a-1"><h1 style="font-size: 18px; color: black; text-align: center;" class="h1-suspense-222">Terror</h1><img src="img-main/terror.png" class="img-a"></a>
+                    <a href="suspense.html" class=".a-1"><h1 style="font-size: 18px; color: black; text-align: center;" class="h1-suspense-333">Suspense</h1><img src="img-main/suspense.png" class="img-a"></a>
+                    <a href="basileiro.html" class=".a-1"><h1 style="font-size: 18px; color: black; text-align: center;" class="h1-suspense-444">Brasileiros</h1><img src="img-main/brasileiro.png" class="img-a"></a>
+                    <a href="romance.html" class=".a-1"><h1 style="font-size: 18px; color: black; text-align: center;" class="h1-suspense-555">Romance</h1><img src="img-main/romance.png" class="img-a"></a>
+                </div>
+        </section>
+            <section id="section-3" class="section-preto-333">
+                    <p class="p-populares" id="p-populares-1">Suspense</p>
+                    <div id="livros">
+                        <div class="livros-populares-1">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/a era dos mortos - rodrigo de oliveira.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">A era dos mortos - <b>Rodrigo de oliveira</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$59,99</del>
+                                <h2 class="preco-h2-1">R$34,99</h2>
+                            <div>
+                                <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_331"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-331" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="livros-populares-2">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/a forma da agua - guillermo del toro.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">A forma da água - <b>Guillermo del toro</b></p>
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$134,99</del>
+                                <h2 class="preco-h2-1">R$79,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_332"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-332" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="livros-populares-3">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/a garota do lago - charlie donlea.jpg" class="a-anuncio-1"
+                                style="max-width: 137.5px; max-height: 200px;">
+                                <p class="p-anuncio-1">A garota do lago - <b>Charlie donlea</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$39,99</del>
+                            <h2 class="preco-h2-1">R$29,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_333"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-333" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="livros-populares-4">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/a garota no gelo - robert bryndza.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">A garota no gelo - <b>Robert bryndza</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$24,99</del>
+                            <h2 class="preco-h2-1">R$19,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_334"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-334" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="livros-populares-5">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/a paciente silenciosa - alex michadelis.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">A paciente silenciosa - <b>Alex michadelis</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$47,99</del>
+                            <h2 class="preco-h2-1">R$41,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_335"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-335" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="livros-populares-4">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/caixa de passsaros - josh malerman.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">Caixa de pássaros - <br><b>Josh malerman</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$32,99</del>
+                            <h2 class="preco-h2-1">R$27,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_336"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-336" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="livros-populares-5">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/e nao sobrou nenhum - agatha christie.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">E não sobrou nenhum - <b>Agatha christie</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$34,99</del>
+                            <h2 class="preco-h2-1">R$31,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_337"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-337" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+            </section>    
+            <section id="section-3" class="section-preto-444">
+                    <p class="p-populares" id="p-populares-2"></p>
+                    <div id="livros">
+                        <div class="livros-populares-1">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/homem de giz- c.j tudor.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">Homem de giz - <b>C.j tudor</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$52,99</del>
+                            <h2 class="preco-h2-1">R$38,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_338"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-338" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="livros-populares-2">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/o colecionador - john fowles.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">O colecionador - <b>John fowles</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$88,99</del>
+                            <h2 class="preco-h2-1">R$56,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_339"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-339" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="livros-populares-3">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/o demonio da cidade branca - erik larson.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">O demonio da cidade branca - <b>Erik larson</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$27,99</del>
+                            <h2 class="preco-h2-1">R$18,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_3310"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-3310" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="livros-populares-4">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/o quarto dia - sarah lotz.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">O quarto dia - <b>Sarah lotz</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$37,99</del>
+                            <h2 class="preco-h2-1">R$29,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_3311"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-3311" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="livros-populares-5">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/o talentoso ripley - patricia highsmith.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">O talentoso ripley - <b>Patricia highsmith</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$67,99</del>
+                            <h2 class="preco-h2-1">R$49,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_3312"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-3312" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="livros-populares-4">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/o ultimo folego - robert bryndza.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">O ultimo folego - <b>Robert bryndza</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$54,99</del>
+                            <h2 class="preco-h2-1">R$48,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_3313"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-3313" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="livros-populares-5">
+                            <a href="" class="anuncio-1">
+                                <img src="imagens dos livros/livros suspense/seis anos depois - harlan coben.jpg" class="a-anuncio-1"
+                                style="width: 137.5px; height: 200px;">
+                                <p class="p-anuncio-1">Seis anos depois - <b>Harlan coben</b></p>
+                                
+                                <span></span>
+                            </a>
+                            <del class="preco-del-1">R$23,99</del>
+                            <h2 class="preco-h2-1">R$16,99</h2>
+                            <div class="a-saiba-mais">
+                                    <p class="p-saiba-mais">
+                                        <button id="shopping_cart_3314"><img src="img/shopping-cart.webp" class="carrinho"></button>
+                                    </p>
+                                    <p class="p-saiba-mais-heart">
+                                        <button id="btn-heart-3314" style="height: 35px; width:35px;"><img src="img/heart-regular.svg" alt=""></button>
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <div class="links" style="padding-top: 6rem;">
+                <div class="pag">
+                    
+                    <h4 class="pag-meios-text">Formas de pagamento</h4>
+
+                    <img src="logoRedes/visa.png" class="img-pag-visa">
+                    
+                    <img src="logoRedes/mastercard.png"  class="img-pag-master">
+
+                    <img src="logoRedes/elo.png" alt=""  height=60px  width="80px" class="img-pag-elo">
+
+                </div>
+                <div class="redes">
+                    <h4 class="redes-text">Redes Sociais</h4>
+                    <button>     
+                        <a href="https://pt-br.facebook.com/"><img class="img" src="logosFooter/Facebook.png" alt="" height=60px  ></a>
+                    </button>
+                    <button>  
+                        <a href="https://www.instagram.com/"> <img class="img-instagram" src="logoRedes/logoInstagram.png" alt="" height=60px></a>  </button>
+                    <button>  
+                        <a href="https://br.linkedin.com/"> <img  class="img-linkedin" src="logoRedes/logoLinkedin.png" alt="" height=60px></a> </button>
+                    <button >  
+                        <a href="https://twitter.com/?lang=pt-br">  <img class="img-twitter" src="logoRedes/logoTwitter.png" alt="" height=60px></a> </button>
+                </div>
+            </div>
+                <div class="ajuda" style="margin-top: -7rem;">
+                    
+                        <div class="ak111">
+                            <div class="contato">
+                                <a href="https://siga.cps.sp.gov.br/aluno/loginetec.aspx" ><img src="logosFooter/chat-dots.svg" style="width: 60px;" class="img-teste"></a>
+                                <b class="b-teste">Central de atendimento</b>
+                                <p class="p-teste">Utilize nosso FAQ, chat online ou <br> email para soluycionar suas dúvidas.</p>
+                            </div>
+                        </div>
+                        <div class="ak111">
+                            <div class="contato">
+                                <a href="https://www.google.com/maps/dir/-23.3541817,-47.8436531/etec+mapa/@-23.3502151,-47.8488076,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94c5d92ba0c5107d:0x7ed3c17aec5ab394!2m2!1d-47.8454474!2d-23.346329" ><img src="logosFooter/map-trifold.svg" style="width: 60px;" class="img-teste"></a>
+                                <b class="b-teste">localização</b>
+                                <p class="p-teste">Encontre uma loja Mybooks mais perto de você</p>
+                            </div>
+                        </div>
+                        <div class="ak111">
+                            <div class="contato">
+                                <a href="https://www.bb.com.br/site/campanhas/contas/conta-corrente-bb/?gclid=EAIaIQobChMI7eq6karF-gIVC9ORCh1yXgNoEAAYASAAEgIx8vD_BwE"><img src="logosFooter/credit-card.svg" style="width: 60px;" class="img-teste"></a>
+                                <b class="b-teste">Cartões</b>
+                                <p class="p-teste">condições especiais para as suas compras em novas lojas e site. </p>
+                            </div>
+                        </div>
+                        <div class="ak111">
+                            <div class="contato">
+                                <a href="https://etecsalesgomes.com.br/index.html"><img src="logosFooter/suitcase-simple.svg" style="width: 60px;" class="img-teste"></a>
+                                <b class="b-teste">trabalhe conosco</b>
+                                <p class="p-teste">venha fazer parte do nosso time</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                <div class="text"  style="margin-top: -8rem;">
+                    <h6>As ofertas são válidas por tempo determinado e/ou enquanto durarem os estoques. Nosso serviço de entregas não permite encomendas feitas com endereçamento de Caixa Postal.
+                        Os preços apresentados no site não são obrigatoriamente iguais aos apresentados na rede de lojas físicas da MyBooks, e somente são válidos para as compras efetuadas no ato de sua exibição. <br> B. Guedes, Prç. Adelaide Guedes, 1 - Centro, Tatuí - SP, 18270-020</h6>
+    
+                </div>
+        </footer>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

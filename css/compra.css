@@ -1,0 +1,122 @@
+.carrinho_pedido{
+    display: grid;
+    grid-template-areas: 
+    "div1", "div2"
+    ;
+    grid-template-columns: 70% 30%;
+    margin: 0% 15% 0% 10%;
+    padding-top: 100px;
+}
+
+.main-carrinho {
+    background-color: var(--primary-color);
+}
+
+.titulo_cesta{
+    grid-area: div1;
+}
+.titulo_livro_cesta{
+    margin-top: 20%;
+    margin-left: 15px;
+}
+.resumo_pedido{
+    background-color: #f2f2f2;
+    padding: 10%;
+    height: 28rem;
+}
+.resumo_pedido_titulo{
+    grid-area: div2;
+}
+.tabela_produtos{
+    display: flex;
+}
+.produtos_cesta{
+    width: 60%;
+    grid-area: div3;
+}
+.qtd_cesta{
+    width: 20%;
+    grid-area: div4;
+}
+.prc_cesta{
+    width: 20%;
+    padding-left: 5px;
+    grid-area: div5;
+}
+.item_cesta{
+    display: flex;
+}
+.img_cesta{
+    height: 20rem;
+    width: 15rem;
+    border: 1px solid white;
+}
+.qtd_js{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70%;
+    margin-right: 20%;
+}
+.qtd_js_p1, .qtd_js_p2{
+    margin: 0% 5% 5% 5%;
+}
+
+.preco_cesta{
+    padding-left: 10%;
+}
+.preco_produto_cesta1, .preco_produto_cesta2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70%;
+    margin-right: 60%;
+}
+.qtd_produtos_pedido{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.frete{
+    display: flex;
+    justify-content: space-between;
+}  
+.pedido_frete{
+    border-bottom: 1px solid black;
+}
+.preco_total_resumo{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 5%;
+}
+.continuar_resumo{
+    width: 100%;
+    height: 3rem;
+    background-color: #1ccd2a;
+    color: #fff;
+    border-radius: 10px;
+}
+.adicionar_produtos_resumo{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 5%;
+}
+.cupom_resumo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+#segunda_linha_resumo{
+    margin-top: -15%;
+    margin-left: 7%;
+}
+.remover_produto:hover{
+    cursor: pointer;
+}
+.adicionar_produto:hover{
+    cursor: pointer;
+}

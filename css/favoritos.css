@@ -1,0 +1,123 @@
+#main-dos-favoritos {
+    background-color: var(--primary-color);
+}
+
+.favoritos1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.lista{
+    gap: 2rem;
+}
+.item{
+    height: 23rem;
+    width: 15rem;
+    padding-top: 1.5rem;
+}
+.livro{
+    display: flex;
+    flex-direction: column;
+    height: 22rem;
+    align-items: center;
+}
+.remover{
+    width: 19px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.remover:hover {
+    cursor: pointer;
+    background-color: red;
+    transition: 0.5s all;
+}
+
+.img_remover{
+    width: 30px;
+    height: 20px;
+    display: flex;
+}
+.img_livro{
+    height: 60%;
+    width: 100%;
+    box-shadow: 0px 0px 30px 1px rgb(185, 170, 170);
+    background-color: white;
+    border-radius: 10px;
+    border: 10px solid transparent
+}
+.preco_livro{
+    font-size: 20px;
+    font-weight: bold;
+}
+.adicionar_carrinho{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+    background-color: white;
+    border-radius: 20px;
+    width: 230px;
+}
+.shopping_cart_favorites{
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+.img_remover:hover{
+    cursor: pointer;
+}
+.avaliacao{
+    display: flex;
+    margin-left: -35px;
+}
+.name{
+    margin: 12px 0px 5px;
+    padding-bottom: 10px;
+    color: rgb(136, 149, 166);
+    font-size: 18px;
+    height: 60px;
+    width: 230px;
+    text-align: center;
+    font-weight: 500;
+}
+.star-icon{
+    height: 35px;
+    list-style-type: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: rgb(243, 243, 0);
+}
+/* o before define o conteúdo que será adicionado antes do elemento */
+/* 2605 estrela preenchida toptal.com*/
+.star-icon::before{
+    content: "\2605";
+    font-weight: 50;
+    font-size: 30px;
+}
+.star-icon.ativo ~ .star-icon::before{
+    content: "\2606";
+    /* definição de um conteúdo para os elementos adjacentes ao 1o */
+}
+.avaliacao:hover .star-icon::before{
+    content: "\2605";
+    /* preenchimento das estrelas pelo hover */
+}
+.star-icon:hover ~ .star-icon::before{
+    content: "\2606";
+    /* definição de um conteúdo para as estrelas adjacentes ao elemento pelo hover ~*/
+}
+.shopping_cart_favorites:hover{
+    cursor: pointer;
+}
