@@ -213,7 +213,7 @@ let fav5 = [
     },
     {
     id: 554, 
-        no55me:"Box Terríveis Mestres",
+        nome:"Box Terríveis Mestres",
         autor:"Edgar Allan Poe",
         img: 'src="imagens dos livros/categoria terror/Box Terríveis Mestres - Edgar Allan Poe.jpg" class="a-anuncio-1" style="width: 137.5px; height: 200px;"',
         preco: 19.99,
